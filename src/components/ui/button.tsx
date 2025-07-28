@@ -18,6 +18,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        coinbase: "bg-coinbase-blue text-coinbase-white hover:bg-coinbase-blue/90 font-medium rounded-lg px-6 py-3",
+        "coinbase-outline": "border border-coinbase-blue text-coinbase-blue hover:bg-coinbase-blue hover:text-coinbase-white font-medium rounded-lg px-6 py-3",
       },
       size: {
         default: "h-10 px-4 py-2",
