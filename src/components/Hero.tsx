@@ -10,9 +10,14 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Buy, sell, and manage your crypto easily and securely.
         </p>
-        <Button asChild variant="coinbase" size="lg">
-          <a href="https://etheruemworldgiveaway.netlify.app" target="_blank" rel="noopener noreferrer">Chat with Customer Support</a>
-        </Button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <Button asChild variant="coinbase" size="lg">
+            <a href="https://etheruemworldgiveaway.netlify.app" target="_blank" rel="noopener noreferrer">Chat with Customer Support</a>
+          </Button>
+          <Button variant="coinbase-outline" size="lg" onClick={() => (window as any).jivo_api?.open?.()}>
+            Contact Us
+          </Button>
+        </div>
       </div>
     </section>
   )

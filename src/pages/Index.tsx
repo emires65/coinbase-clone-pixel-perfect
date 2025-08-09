@@ -3,13 +3,14 @@ import Hero from "@/components/Hero"
 import SupportSection from "@/components/SupportSection"
 import StatsSection from "@/components/StatsSection"
 import BottomCTA from "@/components/BottomCTA"
+import Testimonials from "@/components/Testimonials"
 import { useEffect } from "react"
 
 const Index = () => {
   useEffect(() => {
     // Add JivoChat widget script
     const script = document.createElement('script')
-    script.src = '//code.jivosite.com/widget/vg8WBJamcA'
+    script.src = '//code.jivosite.com/widget/hXELMzpYVN'
     script.async = true
     document.body.appendChild(script)
 
@@ -25,6 +26,7 @@ const Index = () => {
       <Hero />
       <SupportSection />
       <StatsSection />
+      <Testimonials />
       <BottomCTA />
     </div>
   );
