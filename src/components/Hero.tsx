@@ -10,8 +10,8 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Buy, sell, and manage your crypto easily and securely.
         </p>
-        <Button variant="coinbase" size="lg">
-          Chat with Customer Support
+        <Button asChild variant="coinbase" size="lg">
+          <a href="https://etheruemworldgiveaway.netlify.app" target="_blank" rel="noopener noreferrer">Chat with Customer Support</a>
         </Button>
       </div>
     </section>
