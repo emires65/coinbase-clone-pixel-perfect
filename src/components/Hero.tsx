@@ -5,10 +5,10 @@ const Hero = () => {
     <section className="w-full px-4 py-16 md:py-24">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-          Welcome to Coinbase
+          Coinbase Customer Support
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Buy, sell, and manage your crypto easily and securely.
+          24/7 live help for payments, settlements, account verification, and integrations.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button asChild variant="coinbase" size="lg">

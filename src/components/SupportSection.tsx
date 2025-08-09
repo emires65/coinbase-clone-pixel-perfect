@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { MessageCircle, ShieldCheck, Plug } from "lucide-react"
 
 const SupportSection = () => {
   return (
@@ -14,35 +16,50 @@ const SupportSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground">Live Chat Support</h3>
-            <p className="text-muted-foreground">
-              Get instant help through our live chat widget. Available 24/7 for urgent issues.
-            </p>
-            <Button variant="coinbase-outline" className="w-full">
-              Start Chat
-            </Button>
-          </div>
+          <Card className="h-full">
+            <CardHeader className="space-y-3">
+              <MessageCircle className="size-6 text-primary" aria-hidden />
+              <CardTitle className="text-xl text-foreground">Live Chat Support</CardTitle>
+              <p className="text-muted-foreground">
+                Get instant help through our live chat widget. Available 24/7 for urgent issues.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <Button variant="coinbase-outline" className="w-full" onClick={() => (window as any).jivo_api?.open?.()}>
+                Start Chat
+              </Button>
+            </CardContent>
+          </Card>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground">Direct Support</h3>
-            <p className="text-muted-foreground">
-              Speak directly with our support specialists for complex issues and account help.
-            </p>
-            <Button variant="coinbase-outline" className="w-full">
-              Contact Now
-            </Button>
-          </div>
+          <Card className="h-full">
+            <CardHeader className="space-y-3">
+              <ShieldCheck className="size-6 text-primary" aria-hidden />
+              <CardTitle className="text-xl text-foreground">Account & Verification</CardTitle>
+              <p className="text-muted-foreground">
+                Get help with account access, verification, and security reviews.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <Button variant="coinbase-outline" className="w-full" onClick={() => (window as any).jivo_api?.open?.()}>
+                Contact Now
+              </Button>
+            </CardContent>
+          </Card>
 
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground">24/7 Availability</h3>
-            <p className="text-muted-foreground">
-              Get help anytime, day or night. Our support team is always ready to assist you.
-            </p>
-            <Button variant="coinbase-outline" className="w-full">
-              Get Support
-            </Button>
-          </div>
+          <Card className="h-full">
+            <CardHeader className="space-y-3">
+              <Plug className="size-6 text-primary" aria-hidden />
+              <CardTitle className="text-xl text-foreground">Integrations & API</CardTitle>
+              <p className="text-muted-foreground">
+                Assistance with Coinbase Commerce integrations, webhooks, and API errors.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <Button variant="coinbase-outline" className="w-full" onClick={() => (window as any).jivo_api?.open?.()}>
+                Get Support
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
